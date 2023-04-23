@@ -1,0 +1,456 @@
+{
+    "count": 10,
+    "cube_histories": [
+        {
+            "id": "Qz0mLw4n8JG3HufTs1ynHfef",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:39+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "<쓸만한 윈드 부스터> 스킬 사용 가능",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "최대 HP : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "올스탯 : +9%",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 20% 무시",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4n8JG3GufTs1ynHSe7",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:37+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "피격 시 10% 확률로 데미지의 20% 무시",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "<쓸만한 윈드 부스터> 스킬 사용 가능",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "최대 HP : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4n8JG3GefTs1ynE3uA",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:36+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "피격 시 10% 확률로 데미지의 20% 무시",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 40% 무시",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "피격 시 10% 확률로 데미지의 20% 무시",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4n8JG3HOfTs1ynE8QR",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:34+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "STR : +12%",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "<쓸만한 샤프 아이즈> 스킬 사용 가능",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +32",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "피격 시 10% 확률로 데미지의 20% 무시",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 40% 무시",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4n8JG3G-fTs1ymHVGK",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:07+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "<쓸만한 윈드 부스터> 스킬 사용 가능",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 20% 무시",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "STR : +12%",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "<쓸만한 샤프 아이즈> 스킬 사용 가능",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +32",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4n8JG3EefTs1ymHd6r",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T23:03:05+09:00",
+            "cube_type": "레드 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "INT : +12%",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 40% 무시",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "<쓸만한 윈드 부스터> 스킬 사용 가능",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 20% 무시",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4m8JG3HefTs1ShFAdU",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T22:51:16+09:00",
+            "cube_type": "블랙 큐브",
+            "item_upgrade_result": "성공",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "레전드리",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": true,
+            "upgradeguaranteecount": 0,
+            "before_potential_options": [
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "LUK : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "최대 MP : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "INT : +12%",
+                    "grade": "레전드리"
+                },
+                {
+                    "value": "피격 시 5% 확률로 데미지의 40% 무시",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +9%",
+                    "grade": "유니크"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4m8JG3GOfTs1SgFNBQ",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T22:50:34+09:00",
+            "cube_type": "블랙 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "유니크",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 107,
+            "before_potential_options": [
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "LUK : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "최대 MP : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "<쓸만한 샤프 아이즈> 스킬 사용 가능",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "STR : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "최대 HP : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4m8JG3G-fTs1SjHMMK",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T22:50:31+09:00",
+            "cube_type": "블랙 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "유니크",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 106,
+            "before_potential_options": [
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "LUK : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "최대 MP : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "STR : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "DEX : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "몬스터 처치 시 15% 확률로 95의 MP 회복",
+                    "grade": "에픽"
+                }
+            ],
+            "after_additional_potential_options": []
+        },
+        {
+            "id": "Qz0mLw4m8JG3HefTs1SjHKx0",
+            "character_name": "코어더블러",
+            "create_date": "2023-04-23T22:50:30+09:00",
+            "cube_type": "블랙 큐브",
+            "item_upgrade_result": "실패",
+            "miracle_time_flag": "이벤트 적용되지 않음",
+            "item_equip_part": "장갑",
+            "item_level": 200,
+            "target_item": "아케인셰이드 시프글러브",
+            "potential_option_grade": "유니크",
+            "additional_potential_option_grade": "노멀",
+            "upgradeguarantee": false,
+            "upgradeguaranteecount": 105,
+            "before_potential_options": [
+                {
+                    "value": "LUK : +9%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "LUK : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "최대 MP : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "before_additional_potential_options": [],
+            "after_potential_options": [
+                {
+                    "value": "HP 회복 아이템 및 회복 스킬 효율 : +30%",
+                    "grade": "유니크"
+                },
+                {
+                    "value": "방어력 : +6%",
+                    "grade": "에픽"
+                },
+                {
+                    "value": "INT : +6%",
+                    "grade": "에픽"
+                }
+            ],
+            "after_additional_potential_options": []
+        }
+    ],
+    "next_cursor": "Qz0mLw4m8JG3HefTs1SjHKx00yzCEfXMktz8dk9wAp5TUuU4Hw=="
+}
