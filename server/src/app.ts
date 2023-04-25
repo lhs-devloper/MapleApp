@@ -2,11 +2,16 @@ import express, { Request, Response } from "express";
 import { URLSearchParams } from "url";
 import { DTOMapping } from "./mapping/DTOMapping";
 import { CubeHistoryResponseDTO } from "./types/CubeHistoryResponseDTO";
+import cors from "cors";
+
 const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-
+app.use(cors({
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200
+}))
 app.get("/", async (req: Request, res: Response) => {
     const { count, date, cursor } = req.query;
     const { key, server } = req.body;
