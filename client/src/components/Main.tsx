@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Value from "./Value";
+import CubeCompoennts from "./CubeCompoennts";
 
 function Main() {
     const [inputKey, setInputKey] = useState("");
@@ -11,7 +11,7 @@ function Main() {
     return (
         <div>
             <input type="text" placeholder="INPUT YOUR API KEY" onChange={onChangeKey} value={inputKey}></input>
-            <Value name={inputKey} />
+            <CubeCompoennts apiKey={inputKey} />
         </div>
     )
 }

@@ -13,25 +13,29 @@ app.use(cors({
     optionsSuccessStatus: 200
 }))
 app.get("/", async (req: Request, res: Response) => {
-    const { count, date, cursor } = req.query;
-    const { key, server } = req.body;
+    const { count, date, cursor, key, server } = req.query;
     let params = {
         "count": "10",
         "date": "2023-04-23",
         "cursor": ""
     }
     let query = new URLSearchParams(params)
-    let response = await fetch(
-        "https://public.api.nexon.com/openapi/maplestory/v1/cube-use-results?"
-        + query, {
-        method: "GET",
-        headers: {
-            "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJYLUFwcC1SYXRlLUxpbWl0IjoiNTAwOjEwIiwiYWNjb3VudF9pZCI6IjcyMTU3OTU1MSIsImF1dGhfaWQiOiIyIiwiZXhwIjoxNjg3MDY3MjEzLCJpYXQiOjE2NzE1MTUyMTMsIm5iZiI6MTY3MTUxNTIxMywic2VydmljZV9pZCI6IjQzMDAxMTM5NyIsInRva2VuX3R5cGUiOiJBY2Nlc3NUb2tlbiJ9.rhPCQtBXQ_9gcJXqjuzUS97qUoKTzZ1aGIxTfy9SgA0"
-        }
-    })
-    let result: CubeHistoryResponseDTO = await response.json();
-    const test = new DTOMapping("reboot", result);
-    return res.send(test.result);
+    try {
+        let response = await fetch(
+            "https://public.api.nexon.com/openapi/maplestory/v1/cube-use-results?"
+            + query, {
+            method: "GET",
+            headers: {
+                "Authorization": key as string
+            }
+        })
+        let result: CubeHistoryResponseDTO = await response.json();
+        const test = new DTOMapping("reboot", result);
+        return res.status(200).send(test.result);
+    } catch (error) {
+        return res.status(400).send([])
+    }
+
 })
 
 app.listen(port, () => {
