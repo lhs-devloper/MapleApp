@@ -24,6 +24,7 @@ function CubeCompoennts(props: propsDTO) {
                 if (response.status === 200) {
                     const data = await response.json();
                     setCubeData(data)
+                    console.log(data)
                 } else {
                     setCubeData([])
                 }

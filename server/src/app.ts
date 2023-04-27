@@ -9,13 +9,13 @@ const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: '*',
     optionsSuccessStatus: 200
 }))
 app.get("/", async (req: Request, res: Response) => {
     const { count, date, cursor, key, server } = req.query;
     let params = {
-        "count": "10",
+        "count": "1000",
         "date": "2023-04-23",
         "cursor": ""
     }

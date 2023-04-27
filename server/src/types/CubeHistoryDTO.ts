@@ -7,7 +7,7 @@ export interface CubeHistoryDTO {
     world_name: string,
     create_date: string,
     cube_type: string,
-    item_upgrate_result: string,
+    item_upgrade_result: string,
     miracle_time_flag: string,
     item_equip_part: string,
     item_level: string,
