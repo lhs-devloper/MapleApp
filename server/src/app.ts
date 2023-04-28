@@ -16,7 +16,7 @@ app.get("/", async (req: Request, res: Response) => {
     const { count, date, cursor, key, server } = req.query;
     let params = {
         "count": "1000",
-        "date": "2023-04-23",
+        "date": date as string,
         "cursor": ""
     }
     let query = new URLSearchParams(params)
@@ -29,9 +29,13 @@ app.get("/", async (req: Request, res: Response) => {
                 "Authorization": key as string
             }
         })
-        let result: CubeHistoryResponseDTO = await response.json();
-        const test = new DTOMapping("reboot", result);
-        return res.status(200).send(test.result);
+        let result = await response.json();
+        if (result.cube_histories.length !== 0) {
+            const test = new DTOMapping("reboot", result);
+            return res.status(200).send(test.result);
+        } else {
+            return res.status(406).send([])
+        }
     } catch (error) {
         return res.status(400).send([])
     }

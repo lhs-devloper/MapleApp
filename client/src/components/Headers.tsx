@@ -7,15 +7,14 @@ const HeaderDiv = styled.div`
     background-color: aqua;
     justify-content: flex-end;
 `
-const Button = styled.button`
-    color: white;
-    background-color: #ccc;
-`
+// const Button = styled.button`
+//     color: white;
+//     background-color: #ccc;
+// `
 
 function Headers() {
     return (
         <HeaderDiv>
-            <Button>123</Button>
         </HeaderDiv>
     )
 }

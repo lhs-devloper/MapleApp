@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
-import CubeUseComponent from "./CubeUseComponent";
 import { CubeHistoryDTO } from "../types/CubeHistoryDTO";
+import CubeDataComponent from "./CubeDataComponent";
+import CubeUseComponent from "./CubeUseComponent";
 
 type propsDTO = {
     apiKey: string
+    dateString: string
 }
 
 function CubeCompoennts(props: propsDTO) {
     const [key, setKey] = useState("");
     const [cubeData, setCubeData] = useState<CubeHistoryDTO[]>([]);
+    const [statusCode, setStatusCode] = useState(0);
     useEffect(() => {
         const timer = setTimeout(() => {
             setKey(props.apiKey)
@@ -17,34 +20,65 @@ function CubeCompoennts(props: propsDTO) {
     }, [props])
 
     useEffect(() => {
-        fetch(`http://localhost:4000?key=${key}`, {
+        fetch(`http://localhost:4000?key=${key}&date=${props.dateString}`, {
             'method': 'GET',
         })
             .then(async (response) => {
                 if (response.status === 200) {
                     const data = await response.json();
                     setCubeData(data)
-                    console.log(data)
+                    setStatusCode(200)
+                } else if (response.status === 406) {
+                    setCubeData([])
+                    setStatusCode(406)
                 } else {
                     setCubeData([])
+                    setStatusCode(400)
                 }
             })
-    }, [key])
-    if (cubeData.length !== 0) {
-        const dataList = cubeData.map((cube: CubeHistoryDTO, key: number) => {
+    }, [key, props.dateString])
+    function onClick() {
+        const cubeList = document.getElementById("cubeList");
+        if (cubeList?.classList.contains("hide")) {
+            cubeList?.classList.add("show")
+            cubeList?.classList.remove("hide")
+        } else {
+            cubeList?.classList.add("hide")
+            cubeList?.classList.remove("show")
+        }
+    }
+    if (statusCode === 200) {
+        const cubeReulsrList = cubeData.map((cube: CubeHistoryDTO, key: number) => {
             return (
-                <CubeUseComponent key={key} data={cube} />
+                <CubeDataComponent key={key} data={cube} />
             )
         })
-        // const dataList: JSX.Element[] = cubeData?.map((data: CubeHistoryDTO, key:number)=>{
-        //     <CubeUseComponent key={key} data={data} />
-        // })
+        // ? 개선필요
         return (
             <div>
-                {dataList}
+                <CubeUseComponent data={cubeData} />
+                <button onClick={onClick}>
+                    큐브 사용 확인
+                </button>
+                <div className="hide" id="cubeList">
+                    {cubeReulsrList}
+                </div>
+            </div>
+        )
+    } else if (statusCode === 406) {
+        return (
+            <div>
+                해당 날짜에 데이터가 존재하지 않습니다.
             </div>
         )
     } else {
+        if (props.dateString === "") {
+            return (
+                <div>
+                    날짜를 선택해주세요.
+                </div>
+            )
+        }
         return (
             <div>
                 해당 API Key는 존재하지 않습니다.

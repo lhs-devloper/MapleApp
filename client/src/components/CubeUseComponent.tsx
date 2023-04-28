@@ -7,69 +7,57 @@ import curiousCube from "../img/cube_icon04.png";
 import meisterCube from "../img/cube_icon05.png";
 import masterCube from "../img/cube_icon06.png";
 import styled from "styled-components";
+import { ParserCubeType } from "../types/class/ParserCubeType";
 
 type IProps = {
-    data: CubeHistoryDTO
+    data: CubeHistoryDTO[]
 }
 
-const CubeDiv = styled.div`
-    display: flex;
-    justify-content: center;
-    
+const CubeInfoDiv = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
 `
-
-const CubeInfo = styled.div<{ success: boolean }>`
-    display: flex;
-    flex-direction: column;
-    background-color: ${({ success }) => success ? '#fff' : '#ccc'};
+const CubeCountDiv = styled.div`
+   width: 100px; 
+   font-weight: bold;
 `
 function CubeUseComponent({ data }: IProps) {
-    function returnCubeImg(cube_type: string): string {
-        let imgSrc: string = "";
-        switch (cube_type) {
-            case "레드 큐브":
-                imgSrc = redCube;
-                break;
-            case "블랙 큐브":
-                imgSrc = blackCube;
-                break;
-            case "에디셔널 큐브":
-                imgSrc = additionalCube;
-                break;
-            case "수상한 큐브":
-                imgSrc = curiousCube;
-                break;
-            case "장인의 큐브":
-                imgSrc = meisterCube
-                break;
-            case "명장의 큐브":
-                imgSrc = masterCube
-                break;
-        }
-        return imgSrc
-    }
-    const ceiling = data.upgradeguarantee ? '❗천장등업' : '';
+    const findCubeObject = new ParserCubeType(data).getCubeData();
     return (
-        <CubeDiv>
-            <img src={returnCubeImg(data.cube_type)} alt="redCube" style={{ width: '10%' }} />
-            <CubeInfo success={data.item_upgrade_result === "성공" ? true : false}>
-                <div>
-                    {data.character_name}
-                </div>
-                <div>
-                    템 부위: {data.item_equip_part}
-                </div>
-                <div>
-                    템 레벨: {data.item_level}
-                </div>
-                <div>
-                    {data.target_item}
-                </div>
-                <div>
-                    {ceiling}
-                </div>
-            </CubeInfo>
-        </CubeDiv>
+        <div>
+            총 큐브 개수리스트
+            <CubeInfoDiv>
+                <img src={curiousCube} alt="redCube"></img>
+                <CubeCountDiv>
+                    {findCubeObject.curiousCube}개
+                </CubeCountDiv>
+            </CubeInfoDiv>
+            <CubeInfoDiv>
+                <img src={meisterCube} alt="meisterCube"></img>
+                <CubeCountDiv>
+                    {findCubeObject.meisterCube}개
+                </CubeCountDiv>
+            </CubeInfoDiv>
+            <CubeInfoDiv>
+                <img src={masterCube} alt="masterCube"></img>
+                <CubeCountDiv>
+                    {findCubeObject.masterCube}개
+                </CubeCountDiv>
+            </CubeInfoDiv>
+            <CubeInfoDiv>
+                <img src={redCube} alt="redCube"></img>
+                <CubeCountDiv>
+                    {findCubeObject.redCube}개
+                </CubeCountDiv>
+            </CubeInfoDiv>
+            <CubeInfoDiv>
+                <img src={blackCube} alt="blackCube"></img>
+                <CubeCountDiv>
+                    {findCubeObject.blackCube}개
+                </CubeCountDiv>
+            </CubeInfoDiv>
+        </div>
     )
 
 }

@@ -21,3 +21,11 @@ export interface CubeHistoryDTO {
     after_potential_options: CubeResultOptionDTO[],
     after_additional_potential_options: CubeResultOptionDTO[]
 }
+
+export interface CubeObject {
+    curiousCube: number,
+    meisterCube: number,
+    masterCube: number,
+    redCube: number,
+    blackCube: number
+}
